@@ -1,0 +1,70 @@
+.background{
+    background-attachment: fixed;
+    /* background-image: url('images/BRANDLOGO2.png');
+    background-size: contain;
+    background-position: center; */
+}
+
+.hide{
+    display: none;
+}
+
+.toggle {
+    font-family:"cooper black" ;
+}
+.Nav-2{
+    display:flex;
+    background-color: white;
+    opacity:.9;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:10px 10px;
+    margin:0 auto;
+}
+
+.Nav-1{
+    display:flex;
+    background-color: white;
+    opacity:.9;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    padding:10px 10px;;
+    margin:0 auto;
+}
+
+.header{
+    font-family: 'cooper black' ;
+}
+
+
+
+.drop-bar{
+    background-color: #f1f1f1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 200px;
+    transition: .6s ease-in-out;
+    /* margin-top: 50px; */
+}
+
+
+@media (min-width:1023px){
+    .Nav-2{
+    display: none;
+}
+}
+
+@media (max-width:1024px){
+    .Nav-1{
+    display: none;
+}
+.drop-bar{
+    width: 200px;
+    
+}
+}
