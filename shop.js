@@ -1,9 +1,32 @@
-// document.getElementById("image-1").addEventListener("mouseover", (() => {
-//    document.getElementById("image-1").src ="images/23.png";
-// }));
-// document.getElementById("image-1").addEventListener("mouseleave", (() => {
-//    document.getElementById("image-1").src ="images/18.png";
-// }));
+function slideshow(){
+   let img_1 = document.getElementById("image-1");
+
+let img_Arr = [
+      "images/THM_4244-Edit.jpg",
+      "images/THM_4348 (1).jpg"
+   ]
+   index = 0;
+  setInterval(() => {
+     if(index == img_Arr.length - 1){
+        index = 0;
+        img_1.src = img_Arr[index];
+      }
+      else{
+        index += 1;
+      img_1.src = img_Arr[index];
+      }
+   }, 2500);
+}
+slideshow()
+//   setInterval(() => {
+//      img_1.src ="images/THM_4244-Edit.jpg";
+//   }, 1500);
+
+   // document.getElementById("image-1").addEventListener("mouseleave", (() => {
+   // document.getElementById("image-1").src ="images/18.png";
+
+
+
 
 // document.getElementById("image-2").addEventListener("mouseover", (() => {
 //    document.getElementById("image-2").src ="images/22.png";

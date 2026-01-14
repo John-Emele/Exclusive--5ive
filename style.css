@@ -1,8 +1,11 @@
 .background{
     background-attachment: fixed;
-    /* background-image: url('images/BRANDLOGO2.png');
-    background-size: contain;
-    background-position: center; */
+}
+
+.background_2{
+    background-image: url(images/THM_4291-Edit.jpg);
+    background-attachment: fixed;
+    /* opacity: .9; */
 }
 
 .hide{
